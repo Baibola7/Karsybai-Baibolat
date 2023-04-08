@@ -1,7 +1,7 @@
 public class FindMinValue {
     /**
-     @findMin - To find the minimum in a list
-     @param - integer number (arr)
+     @findMinimum - To find the minimum in a list
+     @param - integer array (arr)
      @return - the smallest array object(integer)
      **/
     public static int findMinimum(int[] arr) {
