@@ -2,7 +2,7 @@ public class FindPrime {
     /**
      @isPrime- To Find a prime number
      @param - integer number (n)
-     @return - a prime is number object(integer)
+     @return - a prime number object(integer)
      **/
     public static boolean isPrime(int n) {
         if (n <= 1) {

@@ -28,6 +28,18 @@ public class Main {
                 FindPrime.isPrime(n3);
                 System.out.println(FindPrime.isPrime(n3));
                 break;
+            case 4:
+                int n4 = scanner.nextInt();
+                Factorial.factorial(n4);
+                System.out.println(Factorial.factorial(n4));
+                break;
+            case 5:
+                int n5 = scanner.nextInt();
+                Fibonacci.fibonacci(n5);
+                System.out.println(Fibonacci.fibonacci(n5));
+                break;
+            case 6:
+
         }
     }
 }
