@@ -183,3 +183,18 @@ Solution:
         }
         return binomialCoefficient(n-1,k-1) + binomialCoefficient(n-1, k);
     }
+   Task 10 module src
+
+Description: return the GCD value of the number
+
+Explanation: This function takes two integers a and b as input and uses recursion to calculate their GCD using the Euclidean Algorithm. The base case is when b is equal to 0, in which case the GCD is a. Otherwise, it recursively calls itself with b as the first argument and a % b as the second argument, which is equivalent to replacing b with the remainder of a divided by b.
+
+Solution:
+
+        public static int gcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return gcd(b, a % b);
+        }
+    }

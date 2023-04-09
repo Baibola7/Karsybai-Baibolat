@@ -72,6 +72,13 @@ public class Main {
                 System.out.println(numFromBinom);
                 break;
             case 10:
+                int a10 = scanner.nextInt();
+                int b10 = scanner.nextInt();
+                GCD.gcd(a10,b10);
+                System.out.println(GCD.gcd(a10,b10));
+                break;
+            case 0:
+                System.exit(0);
         }
     }
 }
