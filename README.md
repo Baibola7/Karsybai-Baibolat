@@ -1,11 +1,11 @@
-# Karsybai-Baibolat
+ # Karsybai-Baibolat
  1. Find the minimum value
  2. Find the average value
  3. Find prime number
  4. Factorial
  5. Fibonacci 
- 6. a in n degree
- 7. Reverse the order
+ 6. Power
+ 7. Reverse array
  8. Is all digits check
  9. Binomial coefficient
  10. Find the GCD
@@ -68,3 +68,27 @@ Solution:
  
    Task 6 module src
 
+Description: return power of the number
+
+Explanation: If "n" is 0, then "a" raised to the power of 0 is 1, so we return 1.
+If "n" is negative, we return the reciprocal of "a" raised to the absolute value of "n".
+If "n" is positive, we use a loop to multiply "a" by itself "n" times and return the result.
+
+Solution:
+ 
+     public static double power(double a, int n) {
+        if (n == 0) {
+            return 1;
+        } else if (n < 0) {
+            return 1/power(a, -n);
+        } else {
+            double result = 1;
+            for (int i = 0; i < n; i++) {
+                result *= a;
+            }
+            return result;
+        }
+    }
+
+   Task 7 module src
+   

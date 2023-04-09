@@ -39,6 +39,13 @@ public class Main {
                 System.out.println(Fibonacci.fibonacci(n5));
                 break;
             case 6:
+                double a6 = scanner.nextDouble();
+                int n6 = scanner.nextInt();
+                Power.power(a6, n6);
+                System.out.println(Power.power(a6,n6));
+                break;
+            case 7:
+
 
         }
     }
