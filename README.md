@@ -6,7 +6,7 @@
  5. Fibonacci 
  6. Power
  7. Reverse array
- 8. Is all digits check
+ 8. Check digits
  9. Binomial coefficient
  10. Find the GCD
   
@@ -150,4 +150,36 @@ Solution:
      }
 
    Task 8 module src
+
+Description: return check for is all characters are digits
+
+Explanation: This function takes a string s as input and checks whether every character in the string is a digit using the Character.isDigit() method. If it encounters a non-digit character, it immediately returns false. If it makes it through the entire string without finding a non-digit character, it returns true
     
+Solution:
+
+        public static boolean isAllDigits(String s) {
+        for (int i = 0; i < s.length(); i++) {
+            if (!Character.isDigit(s.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+   Task 9 module src
+
+Description: return the binomial coefficient of the number
+
+Explanation: the function will return the binomial coefficient of the number. Base cases are k=0, it will return 1, and n=k, it will return 1. Otherwise, it returns recursive function with arguments n-1 and k-1 added to recursive function with arguments n-1 and k.
+  
+Solution:
+
+        public static int binomialCoefficient(int n, int k){  
+        if (k == 0) {
+            return 1;
+        }
+        if (n == k) {
+            return 1;
+        }
+        return binomialCoefficient(n-1,k-1) + binomialCoefficient(n-1, k);
+    }

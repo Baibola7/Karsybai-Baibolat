@@ -55,8 +55,23 @@ public class Main {
                 for(int i : arr7)
                     System.out.print(i + " ");
                 break;
-
-
+            case 8:
+                String s = "123456";
+                boolean isDigit = CheckDigits.isAllDigits(s);
+                if (isDigit){
+                   System.out.println("The string consists only of digits");
+                }
+                else {
+                    System.out.println("The string contains non-digit characters");
+                }
+                break;
+            case 9:
+                int n9 = scanner.nextInt();
+                int k = scanner.nextInt();
+                int numFromBinom = BinomialCoefficient.binomialCoefficient(n9, k);
+                System.out.println(numFromBinom);
+                break;
+            case 10:
         }
     }
 }
