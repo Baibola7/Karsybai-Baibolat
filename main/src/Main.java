@@ -42,9 +42,19 @@ public class Main {
                 double a6 = scanner.nextDouble();
                 int n6 = scanner.nextInt();
                 Power.power(a6, n6);
-                System.out.println(Power.power(a6,n6));
+                System.out.println(Power.power(a6, n6));
                 break;
             case 7:
+                int n7 = scanner.nextInt();
+                int[] arr7 = new int[n7];
+                Scanner scanner7 = new Scanner(System.in);
+                for (int i = 0; i < n7; i++) {
+                    arr7[i] = scanner.nextInt();
+                }
+                ReverseArray.reverse(arr7, 0, n7 - 1);
+                for(int i : arr7)
+                    System.out.print(i + " ");
+                break;
 
 
         }

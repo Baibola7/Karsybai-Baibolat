@@ -1,12 +1,22 @@
  public class ReverseArray {
 
-        public static void reverse(int[] arr, int start, int end) {
-            if (start >= end) {
-                return;
-            }
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            reverse(arr, start + 1, end - 1);
-        }
-    }
+     /**
+      @reverse- To find  the reverse order of the given array.
+      @a - the array
+      @i - first element of the array
+      @j - the last element of the array
+      @return - reversed order of the array
+      **/
+
+     public static int[] reverse(int[] arr, int i, int j) {
+         if (i < j) {
+
+             int temp = arr[i];
+             arr[i] = arr[j];
+             arr[j] = temp;
+             reverse(arr, i + 1, j - 1);
+         }
+         return arr;
+     }
+ }
+

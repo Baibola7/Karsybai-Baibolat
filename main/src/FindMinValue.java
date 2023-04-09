@@ -1,6 +1,6 @@
 public class FindMinValue {
     /**
-     @findMinimum - To find the minimum in a list
+     @findMinimum - To find the minimum value.
      @param - integer array (arr)
      @return - the smallest array object(integer)
      **/

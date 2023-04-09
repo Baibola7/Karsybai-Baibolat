@@ -10,7 +10,47 @@
  9. Binomial coefficient
  10. Find the GCD
   
-    Task 3 module src
+   Task 1 module src
+
+Description: Return the minimum value of an array
+ 
+Explanation: In the above code, we define a method called findMinimum which takes in the array as input. We initialize the minimum element to be the first element of the array and then use a for loop to iterate over the remaining elements of the array. If we find an element that is smaller than the current minimum, we update the minimum value.
+
+
+
+Solution: 
+
+       public static int findMinimum(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("Array must not be empty or null.");
+        }
+        int min = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+   Task 2 module src
+
+Description: Return the average value of an array
+ 
+Explanation: In the above code, we define a method called calculateAverage which takes in the array as input. We use a for loop to iterate over the array and calculate the sum of all elements. Finally, we divide the sum by the length of the array to get the average.
+
+Solution:
+ 
+     public static double calculateAverage(int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        double avg = (double) sum / arr.length;
+        return avg;
+    }
+    
+   Task 3 module src
 Description: return boolean value by checking is the number is prime or not
 
 Explanation: First, we check if the given number "n" is less than or equal to 1.
@@ -91,4 +131,23 @@ Solution:
     }
 
    Task 7 module src
-   
+
+Description: return reverse order of the array
+
+Explanation: In  the above code, we first define a recursive method called reverse which takes in the array, a start index and an end index. We swap the elements at the start and end indices and then call the reverse method again with the updated indices.
+
+Solution:
+
+         public static int[] reverse(int[] arr, int i, int j) {
+         if (i < j) {
+
+             int temp = arr[i];
+             arr[i] = arr[j];
+             arr[j] = temp;
+             reverse(arr, i + 1, j - 1);
+         }
+         return arr;
+     }
+
+   Task 8 module src
+    
