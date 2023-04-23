@@ -1,14 +1,21 @@
- Karsybai-Baibolat
-Second Assignment Documentation
-Welcome to my respository, which I created due to ADS lessons. Here you can easily find some tasks with their explanations. Hope you like it🤙
-Main File Main.java [(source)](https://github.com/Baibola7/Karsybai-Baibolat/blob/master/src/Main.java)
-All tasks in lab-2 works the same way. All you needed to uncomment Example lines and start project**
-MyArrayList [(source)](https://github.com/Baibola7/Karsybai-Baibolat/blob/master/src/MyArrayList.java)
- Method GET:
+### Karsybai-Baibolat
+
+### Second Assignment Documentation
+
+### Main File Main.java [(source)](https://github.com/Baibola7/Karsybai-Baibolat/blob/master/src/Main.java)
+
+### All tasks in lab-2 works the same way. All you needed to uncomment Example lines and start project
+
+### MyArrayList [(source)](https://github.com/Baibola7/Karsybai-Baibolat/blob/master/src/MyArrayList.java)
+
+
+### Method GET:
 Method get that provide exact item of array by index.
- Explanation:
+
+### Explanation:
 Firstly, check by method isExist is object in array. Then, return item of array by index.
-Solution:
+
+### Solution:
  
 
         @Override
@@ -26,11 +33,13 @@ Solution:
         }
     }
  
-Method SIZE:
+### Method SIZE:
 Method size that return length of array.
-Explanation:
+
+### Explanation:
 Simply return size of array.
-Solution:
+
+### Solution:
 
      @Override
      public int size() {
@@ -47,11 +56,13 @@ Solution:
     return size;
   }
 ```
-  Method CONTAINS:
-Method contains that define is object exist in array.
-  Explanation:
+### Method CONTAINS:
+Method contains that define is object exist in array. 
+
+### Explanation:
 Firstly, condition to check is array empty or not, after it goes through loop to define equal to given Object element. Then return Boolean value.
-  Solution:
+
+### Solution:
           
      @Override
      public boolean contains(Object o) {
@@ -73,11 +84,13 @@ Firstly, condition to check is array empty or not, after it goes through loop to
         return false;
     }
 ```
- Method ADD:
+### Method ADD:
 Method add that add to array one object.
- Explanation:
+
+### Explanation:
 Condition to check is free space in array, otherwise increase memory by method increaseBuffer. Then add to next element item.
- Solution:
+
+### Solution:
 ```
      @Override
      public void add(Object item) {
@@ -98,17 +111,19 @@ Condition to check is free space in array, otherwise increase memory by method i
          */
         }
 ```
- Method ADDAT:
-Method addAt that add to aray one object at exact index.
- Explanation:
+### Method ADD:
+Method addAt that add to aray one object at exact index. 
+
+### Explanation:
 Condition to check is index relevant to array by method isExist. Condition to check is free space in array, otherwise increase memory by method increaseBuffer. Then by loop we replace each element by -1, from index to array length.
- Solution:
+
+### Solution:
 ```
   @Override
     public void add(Object item, int index) {
     }
 ```
- Explanation:
+### Explanation:
 Firstly, we throw error if index is not relevant. Than create new node and couple conditions to check equals of head, next and previous. Finally, add to array and increase size.
 ```
  @Override
@@ -125,11 +140,13 @@ Firstly, we throw error if index is not relevant. Than create new node and coupl
         size++;
     }
 ```
- Method REMOVE:
+### Method REMOVE:
 Method remove that remove one object from array.
- Explanation:
+
+### Explanation:
 Condition to check is item relevant to array by method contains. Then by indexOf we check is first occurence is >= 0. Then remove element and return true.
- Solution:
+
+### Solution:
 ```
    @Override
     public boolean remove(Object item) {
@@ -152,11 +169,13 @@ Condition to check is item relevant to array by method contains. Then by indexOf
         return false;
     }
 ```
- Method REMOVE:
+### Method REMOVE:
 Method removeAt that remove one oject from array by index.
- Explanation:
+
+### Explanation:
 Condition to check is index relevant to array by method isExist. Then go through loop to replace each element from index to length of array. Finaly, remove and return element.
- Solution:
+
+### Solution:
 ```
    @Override
     public Object remove(int index){
@@ -180,11 +199,13 @@ Condition to check is index relevant to array by method isExist. Then go through
         return null;
     }
 ```
- Method CLEAR:
+### Method CLEAR:
 Method clear that clear array and array size.
- Explanation:
+
+### Explanation:
 Simply clear array or replace our array with new empty data.
- Solution:
+
+### Solution:
 ```
    @Override
     public void clear(){
@@ -201,11 +222,13 @@ Simply clear array or replace our array with new empty data.
     }
 
 ```
- Method INDEXOF:
+### Method INDEXOF:
 Method indexOf that returns the position of the first occurrence of specified character(s) in a string.
- Explanation:
+
+### Explanation:
 Check by method contains is object in array list. Then by loop check eaual items to return index, otherwise return -1.
- Solution:
+
+### Solution:
 ```
    @Override
     public int indexOf(Object o) {
@@ -227,11 +250,13 @@ Check by method contains is object in array list. Then by loop check eaual items
         return 0;
     }
 ```
- Method LASTINDEXOF:
+### Method LASTINDEXOF:
 Method lastIndexOf that return the position of the last occurrence of specified character(s) in a string.
- Explanation:
+
+### Explanation:
 Check by method contains is object in array list. Then by loop check equal items and i > index, to equal index = 1, then to return index.
- Solution:
+
+### Solution:
 ```
    @Override
     public int lastIndexOf(Object o) {
@@ -253,11 +278,13 @@ Check by method contains is object in array list. Then by loop check equal items
         return 0;
     }
 ```
- Method SORT:
-Method sort that sort elements of a collection.
- Explanation:
-We use nested loops, to check by conditions in order to swap elements with places, to get right sorted list.
- Solution:
+### Method SORT:
+ Method sort that sort elements of a collection.
+ 
+### Explanation:
+ We use nested loops, to check by conditions in order to swap elements with places, to get right sorted list.
+ 
+### Solution:
 ```
   @Override
     public void sort() {
