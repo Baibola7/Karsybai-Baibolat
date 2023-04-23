@@ -14,7 +14,7 @@ public class Main {
 //        myArrayList.size();
         myArrayList.add(100);
         myArrayList.add(10);
-        myArrayList.add(1230);
+        myArrayList.add(10000);
         myArrayList.sort();
         System.out.println(myArrayList.get(0));
         System.out.println(myArrayList.get(1));

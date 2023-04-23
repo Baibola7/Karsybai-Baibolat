@@ -10,6 +10,10 @@ public class MyArrayList implements MyList {
 
     @Override
     public int size() {
+        /**
+         * Method size that return length of array.
+         * @return int.
+         */
         return size;
     }
 
@@ -44,6 +48,10 @@ public class MyArrayList implements MyList {
 
     @Override
     public void add(Object item, int index) {
+        /**
+         * Method add that add to array one object at exact index.
+         * @return null;
+         */
         if (index >= arr.length) {
             increaseBuffer();
         } else {
